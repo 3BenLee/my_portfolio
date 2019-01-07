@@ -1,0 +1,161 @@
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.port-section {
+  background: $darkblue;
+  padding: 5em 0;
+  color: rgba($white, .6);
+
+  @media (max-width: 768px) {
+    padding: 2em 0;
+  }
+}
+
+.grid-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.my-work {
+  width: 40%;
+  margin: 30px;
+
+  @media(max-width: 768px) {
+    order: -1;
+    width: 100%;
+    margin:10px;
+  }
+}
+
+.port-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 6rem;
+  color: $white;
+  margin: 0;
+
+  @media (max-width: 1200px) {
+     font-size: 4.5rem; 
+  }
+
+  @media (max-width: 960px) {
+     font-size: 3.8rem; 
+  }
+
+  @media (max-width: 767px) {
+     font-size: 3rem; 
+  }
+  
+  span {
+    display: block;
+    font-weight: 900;
+  }
+}
+
+.last-item {
+  width: 40%;
+  margin: 30px;
+
+    @media (max-width: 1200px) {
+     font-size: 4.5rem; 
+  }
+
+  @media (max-width: 960px) {
+     font-size: 3.8rem; 
+  }
+
+  @media (max-width: 767px) {
+     font-size: 3rem;
+     margin: 10px; 
+  }
+  
+  span {
+    display: block;
+    font-weight: 900;
+  }
+}
+
+.project {
+  margin: 0;
+  margin: 30px;
+  position: relative;
+  width: 40%;
+  
+  @media (max-width: 768px) {
+   margin: 10px;
+   width: 45%; 
+  }
+
+  @media (max-width: 450px) {
+   width: 100%; 
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+  
+  figcaption {
+    position: absolute;
+    top: 1.5em;
+    bottom: 1.5em;
+    left: 1.5em;
+    right: 1.5em;
+    background: rgba($green, .8);
+    color: $darkblue;
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 300ms;
+
+      @media (max-width: 960px) {
+        font-size: .5rem; 
+      }
+  }
+  
+  &:hover figcaption { 
+    opacity: 1;
+  }
+  
+  .project-description {
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

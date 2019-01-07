@@ -1,0 +1,150 @@
+
+.bg-page-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/hello-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  @media (max-width: 550px) {
+    background-image: url('../images/home-bg-scale_w_482.jpeg');
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }   
+}
+
+#name {
+  position: absolute;
+  width: 55%;
+  text-align: left;
+  margin-top: 10%;
+  margin-left: 10%;
+  color: $white;
+  font-size: 4.5rem;
+  font-weight: 200;
+  letter-spacing: 0px;
+  animation: 3s fadeIn fadeOut;
+
+  @media (max-width: 1240px) {
+    width: 70%;
+    margin-left: 3%;
+    color: $white;
+    animation: 2s fadeIn;
+  }
+
+  @media (max-width: 850px) {
+    width: 90%;
+    color: $white;
+    font-size: 3rem;
+    margin-left: 2%;
+    font-weight: 900;
+    animation: 2s fadeIn;
+  }
+
+  @media (max-width: 767px) {
+    width: 90%;
+    color: $white;
+    font-size: 2.7rem;
+    margin-left: 2%;
+    font-weight: 900;
+    animation: 2s fadeIn;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 2.4rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#subtitle {
+  position: absolute;
+	height: 40px;
+  width: 25%;
+  margin-top: 18%;
+  margin-left: 10%;
+	text-align: center;
+  letter-spacing: -2px;
+	background-color: rgba(112, 169, 161, 0.7);
+  color: $darkblue;
+	font-size: 2rem;
+  font-weight: 300;
+  animation: 4s fadeIn fadeOut;
+
+  @media (max-width: 1240px) {
+    width: 40%;
+    margin-top: 200px;
+    margin-left: 3%;
+    text-align: center;
+    color: $darkblue;
+    background-color: $green;
+    font-size: 2rem;
+    font-weight: 300;
+    animation: 4s fadeIn;
+  }
+  
+  @media (max-width: 850px) {
+    width: 40%;
+    margin-top: 150px;
+    margin-left: 3%;
+    padding-top: 5px;
+    margin-right: auto;
+    text-align: center;
+    background-color: $green;
+    color: $darkblue;
+    font-size: 1.6rem;
+    font-weight: 300;
+    animation: 4s fadeIn;
+  }
+  
+  @media (max-width: 767px){
+    width: 40%;
+    margin-top: 130px;
+    margin-left: 3%;
+    padding-top: 5px;
+    margin-right: auto;
+    text-align: center;
+    background-color: $green;
+    color: $darkblue;
+    font-size: 1.6rem;
+    font-weight: 300;
+    animation: 4s fadeIn;
+  }
+
+  @media (max-width: 550px){
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

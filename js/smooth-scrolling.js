@@ -1,0 +1,2 @@
+$('.menu').localScroll();
+$('.navbar').localScroll();
